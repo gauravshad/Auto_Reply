@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Default">#ffffff</color>
+    <color name="pressed">#8b9dc3</color>
+    <color name="selected">#86d3f6</color>
+    <color name="inverse">#FFFFFF</color>
+    <color name="white">#ffffff</color>
+
+</resources>

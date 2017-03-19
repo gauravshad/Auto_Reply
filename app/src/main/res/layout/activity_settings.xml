@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.gaurav.auto_reply.settings"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:background="#dfe3ee">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#3b5998"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="#ffffff"
+        android:layout_marginTop="7dp"
+        android:layout_below="@+id/my_toolbar"
+        />
+
+    <TextView android:text="General Settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:typeface="monospace"
+        android:id="@+id/text1"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/my_toolbar"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:text="Notifications"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:id="@+id/switch1"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="#ffffff"
+        android:layout_below="@+id/text1"
+        android:layout_marginTop="97dp"
+        />
+
+    <TextView android:text="Reply Settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:typeface="monospace"
+        android:id="@+id/text2"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/text1"
+        android:textColor="#000000"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/text2"
+        android:background="#ffffff">
+
+        <RadioButton android:id="@+id/all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send to all"
+            android:textSize="18dp"
+            android:onClick="onRadioButtonClicked"
+            android:checked="true"
+            android:layout_marginLeft="40dp"
+
+            />
+
+        <RadioButton android:id="@+id/specific"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send only to contacts in specific profile"
+            android:textSize="18dp"
+            android:onClick="onRadioButtonClicked"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="40dp"
+
+            />
+
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/done"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#009788"
+        android:backgroundTint="#009788"
+        android:textColor="#FFFFFF"
+        android:text="DONE"
+        android:layout_marginBottom="23dp"
+        android:layout_marginRight="43dp"
+
+        />
+
+
+
+</RelativeLayout>
